@@ -17,10 +17,10 @@ The repository has the following commit structure:
 2b931de Remove href attributes from social links
 5bf1c6d Obscure personal contact information
 4599ba8 Merge pull request #1 from mytminnkyw/copilot/create-portfolio-website-dark-theme
-├─ 281ada1 Update portfolio with actual CV details for Myat Minn Kyaw
-├─ a67ef7e Replace deprecated pageYOffset with modern scrollY property
-├─ c40e3b8 Create modern dark-themed portfolio website for translator
-└─ 8d8dec2 Initial plan
+  ├─ 281ada1 Update portfolio with actual CV details for Myat Minn Kyaw
+  ├─ a67ef7e Replace deprecated pageYOffset with modern scrollY property
+  ├─ c40e3b8 Create modern dark-themed portfolio website for translator
+  └─ 8d8dec2 Initial plan
 b543792 Initial commit
 ```
 
@@ -50,7 +50,7 @@ fatal: ambiguous argument 'HEAD~7': unknown revision or path not in the working 
 Even if we use an alternative approach:
 
 1. **No force push available**: The environment doesn't allow `git push --force`, which is required to push a moved HEAD backward
-2. **Automatic rebase**: The `report_progress` tool automatically rebases against origin, which would undo any local reset operation
+2. **Automatic rebase**: Automated tools may rebase against origin, which would undo any local reset operation
 3. **Shallow clone initially**: The repository was initially cloned as shallow, limiting access to full history
 
 ## Alternative Approaches Considered

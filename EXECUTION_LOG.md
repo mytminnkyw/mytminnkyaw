@@ -55,7 +55,7 @@ The repository has 9 total commits when counting all branches, but only 5 commit
 
 ### What Would Be Required
 To make `git reset --soft HEAD~7` work, one of the following would be needed:
-1. At least 8 commits in the first-parent history from HEAD
+1. At least 8 commits total in the first-parent history from HEAD (since HEAD~7 means going back 7 commits from HEAD)
 2. A linear history (no merge commits) with at least 8 total commits on the current branch
 
 ### Current Limitation
