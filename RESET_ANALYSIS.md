@@ -14,7 +14,7 @@ The repository contains 9 commits total, with a merge commit creating a non-line
 5bf1c6d Obscure personal contact information
 4599ba8 Merge pull request #1 (merge commit)
 ├─ 281ada1 Update portfolio with actual CV details
-├─ a67ef7e Replace deprecated pageYOffset  
+├─ a67ef7e Replace deprecated pageYOffset with modern scrollY property  
 ├─ c40e3b8 Create modern dark-themed portfolio website
 └─ 8d8dec2 Initial plan
 b543792 Initial commit
@@ -59,12 +59,12 @@ git commit -m "Add portfolio website (consolidated from soft reset)"
 
 Result:
 - ✓ Created new commit successfully
-- ✗ When pushed via report_progress, rebase dropped the commit as "patch contents already upstream"
+- ✗ When pushed, automated rebase dropped the commit as "patch contents already upstream"
 
 ## Environment Constraints
 
 1. **Force push unavailable**: Required to push moved HEAD backward
-2. **report_progress rebases**: Automatically fetches and rebases against origin, undoing local resets
+2. **Automated rebase process**: The deployment tool automatically fetches and rebases against origin, undoing local resets
 3. **Patch detection**: Identical changes are dropped during rebase
 
 ## Conclusion
