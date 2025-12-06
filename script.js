@@ -35,7 +35,7 @@ const navbar = document.querySelector('.navbar');
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
+    const currentScroll = window.scrollY;
     
     if (currentScroll > 100) {
         navbar.classList.add('scrolled');
@@ -55,7 +55,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (target) {
             const headerOffset = 80;
             const elementPosition = target.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
             window.scrollTo({
                 top: offsetPosition,
@@ -69,7 +69,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const sections = document.querySelectorAll('section[id]');
 
 function highlightNav() {
-    const scrollY = window.pageYOffset;
+    const scrollY = window.scrollY;
     
     sections.forEach(section => {
         const sectionHeight = section.offsetHeight;
@@ -300,7 +300,7 @@ function typeWriter(element, text, speed = 100) {
 
 // ==================== Parallax Effect ====================
 window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
+    const scrolled = window.scrollY;
     const heroImage = document.querySelector('.hero-image');
     
     if (heroImage) {
